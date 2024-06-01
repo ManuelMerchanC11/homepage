@@ -7,6 +7,7 @@
     initial-scale=1" />
     <title>Résumé</title>
     <link rel="stylessheet" href="styles.css">
+    
 </head>
 
 <body>
@@ -52,8 +53,9 @@
                         </div>
 
                         <div class="contact-info__block contact-info__block--center">
-                            <img class="contact-info__avatar" src="assets/robot_duck.jpg" alt="Avatar" width="200"
-                                height="200" />
+                            <audio id="audio" src="assets/quack.mp3"></audio>
+                            <img id="ducky" class="contact-info__avatar" src="assets/robot_duck.jpg" alt="Avatar"
+                                width="200" height="200" />
                             <img src="assets/fotomia.jpeg" width="150" height="200">
                         </div>
 
@@ -111,7 +113,8 @@
             <h3 class="experiences__header">Experience</h3>
             <div class="experiences__company">
                 <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability">I don't have experience at Binary Studio Academy. For now..... &#128526</span>
+                    <span class="experiences__company-header-durability">I don't have experience at Binary Studio
+                        Academy. For now..... &#128526</span>
                     <h3 class="experiences__company-header-name">Binary Studio</h3>
                 </div>
 
@@ -132,7 +135,8 @@
                         <div class="additional-info__education-university">
                             <span class="additional-info__education-university-durability"> * (2018-2022) </span>
                             <span class="additional-info__education-university-durability"> ** (2019-2023) </span>
-                            <h3 class="additional-info__education-university-speciality">* Biomedical engineer ** Electronic engineer</h3>
+                            <h3 class="additional-info__education-university-speciality">* Biomedical engineer **
+                                Electronic engineer</h3>
                             <p class="additional-info__education-university-name">Universidad de los Andes</p>
                         </div>
                     </div>
@@ -143,8 +147,10 @@
                         <p class="additional-info__languages-item">Spanish</p>
                         <h3 class="additional-info__languages-header">Hobbies</h3>
                         <ul style="color: rgba(60, 51, 221, 0.944);">
-                            <li>I like to play football (the sport that you play with the ball using your foot almost all the time, not the one called football in USA 😅​)</li>
-                            <li>Play in my xbox console the only 3 games i enjoy: FIFA, multiplayer Halo infinite and Fortnite. <b>Gamertag: wolf beast 990</b></li>
+                            <li>I like to play football (the sport that you play with the ball using your foot almost
+                                all the time, not the one called football in USA 😅​)</li>
+                            <li>Play in my xbox console the only 3 games i enjoy: FIFA, multiplayer Halo infinite and
+                                Fortnite. <b>Gamertag: wolf beast 990</b></li>
                             <li>I like watching movies of all genres.</li>
                             <li>I'm starting to read for enhancing my reading skill.</li>
                             <li>In the future I hope i can create my own videogame.</li>
@@ -154,6 +160,10 @@
             </div>
         </div>
     </main>
+
+    <script>
+        document.getElementById("ducky").addEventListener("click", function () { document.getElementById("audio").play() });
+    </script>
 
 </body>
 
